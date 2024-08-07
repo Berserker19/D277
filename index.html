@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Florida!</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
@@ -13,13 +13,14 @@
     </header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="tallahassee.html">Tallahassee</a></li>
-        <li><a href="orlando.html">Orlando</a></li>
-        <li><a href="tampa.html">Tampa</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./tallahassee.html">Tallahassee</a></li>
+        <li><a href="./orlando.html">Orlando</a></li>
+        <li><a href="./tampa.html">Tampa</a></li>
       </ul>
     </nav>
-    <section>
+
+    <section class="float-left">
       <h2>About Florida</h2>
       <p>
         Florida is the nation's most densely populated state in the southeastern
@@ -29,7 +30,7 @@
         mockingbird serves as the designated state bird of Florida.
       </p>
 
-      <div class="relative-box">
+      <div class="relative-position">
         <p>
           Florida is renowned for its tropical temperature, stunning coastlines,
           and rich cultural legacy. To obtain additional information, please
@@ -39,13 +40,24 @@
           For more information, visit the
           <a href="https://www.visitflorida.com" target="_blank"
             >Visit Florida</a
-          >website.
+          >
+          website.
         </p>
       </div>
-  <img src="/D277/florida.jpg" alt="Map of Florida">
+
+      <img src="./florida.jpg" alt="Map of Florida" />
     </section>
 
-    <section>
+    <aside class="float-right">
+      <h3>Did You Know?</h3>
+      <p>Florida is the third most populous state in the United States.</p>
+      <img src="Graph.png" alt="Population Graph" style="width: 500px" />
+      <footer>
+        <p>Questions? <a href="form.html">Contact Us</a></p>
+      </footer>
+    </aside>
+
+    <section style="clear: both">
       <h2>Comparison of Key Florida Cities</h2>
       <table>
         <tr>
@@ -78,13 +90,5 @@
         </tr>
       </table>
     </section>
-    <footer>
-      <p>Have questions? <a href="form.html">Contact Us</a></p>
-    </footer>
-    <aside>
-      <h3>Did You Know?</h3>
-      <p>Florida is the third most populous state in the United States.</p>
-      <img src="graph.png" alt="Population Graph" style="width: 500px" />
-    </aside>
   </body>
 </html>
